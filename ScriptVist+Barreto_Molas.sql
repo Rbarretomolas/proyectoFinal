@@ -1,9 +1,9 @@
 -- Vista de Productos y Categorías: Esta vista muestra una lista de productos y sus categorías correspondientes
 CREATE VIEW Vista_Productos_Categorias AS
-SELECT p.Nombre AS Producto, c.Nombre AS Categoría
+SELECT p.Nombre AS Producto, c.Nombre AS Categoria
 FROM Producto p
 JOIN ProductoCategoria pc ON p.idProducto = pc.idProducto
-JOIN Categoría c ON pc.idCategoría = c.idCategoría;
+JOIN Categoria c ON pc.idCategoria = c.idCategoria;
 
 -- Vista de Ventas Totales por Cliente: Esta vista presenta las ventas totales realizadas por cada cliente
 CREATE VIEW Vista_Ventas_Por_Cliente AS

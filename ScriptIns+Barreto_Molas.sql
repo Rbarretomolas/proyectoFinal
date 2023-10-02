@@ -52,13 +52,13 @@ VALUES
     (3, '2023-09-03 10:15:00', 19.99);
 
 -- Creacion de la tabla Categoría
-CREATE TABLE Categoría (
-    idCategoría INT PRIMARY KEY,
+CREATE TABLE Categoria (
+    idCategoria INT PRIMARY KEY,
     Nombre VARCHAR(255)
 );
 
 -- Insercion dedatos en la tabla Categoría
-INSERT INTO Categoría (idCategoría, Nombre)
+INSERT INTO Categoria (idCategoria, Nombre)
 VALUES
     (1, 'Electrónica'),
     (2, 'Ropa'),
@@ -82,13 +82,13 @@ VALUES
 CREATE TABLE ProductoCategoria (
     idProductoCategoria INT PRIMARY KEY,
     idProducto INT,
-    idCategoría INT,
+    idCategoria INT,
     FOREIGN KEY (idProducto) REFERENCES Producto(idProducto),
-    FOREIGN KEY (idCategoría) REFERENCES Categoría(idCategoría)
+    FOREIGN KEY (idCategoria) REFERENCES Categoria(idCategoria)
 );
 
 -- Insercion de datos en la tabla ProductoCategoria (relacion entre productos y categorías)
-INSERT INTO ProductoCategoria (idProductoCategoria, idProducto, idCategoría)
+INSERT INTO ProductoCategoria (idProductoCategoria, idProducto, idCategoria)
 VALUES
     (1, 1, 1),
     (2, 2, 2),
