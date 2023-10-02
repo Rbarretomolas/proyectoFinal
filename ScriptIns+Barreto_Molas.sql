@@ -92,7 +92,7 @@ INSERT INTO ProductoCategoria (idProductoCategoria, idProducto, idCategoría)
 VALUES
     (1, 1, 1),
     (2, 2, 2),
-    (3, 3, 1);
+    (3, 3, 3);
 
 -- Creacion la tabla ClientePedido (tabla intermedia)
 CREATE TABLE ClientePedido (
