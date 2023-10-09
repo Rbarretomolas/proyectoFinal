@@ -15,8 +15,8 @@ CREATE TABLE Pedido (
     Fecha DATETIME,
     Total DECIMAL(10, 2)
 );
-CREATE TABLE Categoría (
-    idCategoría INT PRIMARY KEY,
+CREATE TABLE Categoria (
+    idCategoria INT PRIMARY KEY,
     Nombre VARCHAR(255)
 );
 CREATE TABLE Proveedor (
@@ -27,9 +27,9 @@ CREATE TABLE Proveedor (
 CREATE TABLE ProductoCategoria (
     idProductoCategoria INT PRIMARY KEY,
     idProducto INT,
-    idCategoría INT,
+    idCategoria INT,
     FOREIGN KEY (idProducto) REFERENCES Producto(idProducto),
-    FOREIGN KEY (idCategoría) REFERENCES Categoría(idCategoría)
+    FOREIGN KEY (idCategoria) REFERENCES Categoria (idCategoria)
 );
 CREATE TABLE ClientePedido (
     idClientePedido INT PRIMARY KEY,
