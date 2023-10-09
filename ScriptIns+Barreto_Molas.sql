@@ -24,7 +24,7 @@ VALUES
     (1, 'Producto A', 19.99, 'Descripción del Producto A'),
     (2, 'Producto B', 29.99, 'Descripción del Producto B'),
     (3, 'Producto C', 9.99, 'Descripción del Producto C'),
-	(4, 'Producto D', 39.99, 'Descripción del Producto D'),
+    (4, 'Producto D', 39.99, 'Descripción del Producto D'),
     (5, 'Producto E', 49.99, 'Descripción del Producto E'),
     (6, 'Producto F', 19.99, 'Descripción del Producto F'),
     (7, 'Producto G', 29.99, 'Descripción del Producto G');
