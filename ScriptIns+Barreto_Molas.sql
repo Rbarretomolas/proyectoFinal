@@ -13,7 +13,7 @@ VALUES
     (1, 'Juan Pérez', 'Calle Principal 123', 'juan@example.com'),
     (2, 'María López', 'Avenida Central 456', 'maria@example.com'),
     (3, 'Carlos Rodríguez', 'Calle Secundaria 789', 'carlos@example.com'),
-	(4, 'Laura García', 'Calle Norte 789', 'laura@example.com'),
+    (4, 'Laura García', 'Calle Norte 789', 'laura@example.com'),
     (5, 'Pedro Martinez', 'Avenida Sur 101', 'pedro@example.com'),
     (6, 'Ana Sánchez', 'Calle Este 543', 'ana@example.com'),
     (7, 'Luis Rodríguez', 'Avenida Oeste 876', 'luis@example.com');
