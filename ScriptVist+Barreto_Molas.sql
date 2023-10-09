@@ -45,3 +45,4 @@ SELECT * FROM Vista_Revisiones_Recientes;
 SELECT * FROM Vista_Pedidos_Pendientes;
 SELECT * FROM Vista_Productos_Mas_Vendidos;
 SELECT * FROM Vista_Productos_Categorias;
+

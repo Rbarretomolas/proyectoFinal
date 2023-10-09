@@ -2,13 +2,13 @@
 DROP SCHEMA IF EXISTS e_commerce;
 
 -- Creacion de la base de datos 
-CREATE SCHEMA e_Commerce;
+CREATE SCHEMA e_commerce;
 
 -- Usar la base de datos recién creada
-USE e_Commerce;
+USE e_commerce;
 
 CREATE TABLE Cliente (
-    idCliente INT PRIMARY KEY,
+    idCliente INT AUTO_INCREMENT PRIMARY KEY,
     Nombre VARCHAR(255),
     Dirección VARCHAR(255),
     Email VARCHAR(255)
