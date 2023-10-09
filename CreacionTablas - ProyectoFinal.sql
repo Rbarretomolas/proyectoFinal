@@ -1,3 +1,12 @@
+-- Eliminacion de la base de datos existente
+DROP SCHEMA IF EXISTS e_commerce;
+
+-- Creacion de la base de datos 
+CREATE SCHEMA e_Commerce;
+
+-- Usar la base de datos recién creada
+USE e_Commerce;
+
 CREATE TABLE Cliente (
     idCliente INT PRIMARY KEY,
     Nombre VARCHAR(255),
