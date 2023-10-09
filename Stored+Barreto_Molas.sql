@@ -1,3 +1,30 @@
+-- Eliminacion de la base de datos existente
+DROP SCHEMA IF EXISTS e_commerce;
+
+-- Creacion de la base de datos 
+CREATE SCHEMA e_commerce;
+
+-- Usar la base de datos recién creada
+USE e_commerce;
+
+-- Crear la tabla Cliente
+CREATE TABLE Cliente (
+    idCliente INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(255),
+    Dirección VARCHAR(255),
+    Email VARCHAR(255)
+);
+INSERT INTO Cliente (idCliente, Nombre, Dirección, Email)
+VALUES
+    (1, 'Juan Pérez', 'Calle Principal 123', 'juan@example.com'),
+    (2, 'María López', 'Avenida Central 456', 'maria@example.com'),
+    (3, 'Carlos Rodríguez', 'Calle Secundaria 789', 'carlos@example.com'),
+    (4, 'Laura García', 'Calle Norte 789', 'laura@example.com'),
+    (5, 'Pedro Martinez', 'Avenida Sur 101', 'pedro@example.com'),
+    (6, 'Ana Sánchez', 'Calle Este 543', 'ana@example.com'),
+    (7, 'Luis Rodríguez', 'Avenida Oeste 876', 'luis@example.com');
+
+DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `OrdenarTabla`(
     IN tabla_nombre VARCHAR(255), -- Nombre de la tabla que se desea ordenar
     IN columna_orden VARCHAR(255), -- Nombre de la columna por la cual se desea ordenar
@@ -13,8 +40,10 @@ BEGIN
     
     -- Liberacion de la consulta preparada
     DEALLOCATE PREPARE stmt;
-END;
+END;//
+DELIMITER ;
 
+DELIMITER //
 CREATE DEFINER=`root`@`localhost` PROCEDURE `InsertarEliminarRegistro`(
     IN tabla_nombre VARCHAR(255), -- Nombre de la tabla en la que se realizará la operación
     IN accion VARCHAR(10), -- Acción a realizar: 'INSERT' o 'DELETE'
@@ -46,7 +75,9 @@ BEGIN
 
     -- Devolver un mensaje como resultado
     SELECT mensaje AS Resultado;
-END
+END//
+
+DELIMITER ;
 
 
 
