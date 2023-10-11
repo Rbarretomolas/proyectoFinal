@@ -76,3 +76,26 @@ CREATE TABLE RevisionesDeProductos (
     FOREIGN KEY (idPedido) REFERENCES Pedido(idPedido),
     FOREIGN KEY (idProducto) REFERENCES Producto(idProducto)
 );
+
+-- Tabla de registro para Cliente
+CREATE TABLE RegistroCliente (
+    idRegistro INT AUTO_INCREMENT PRIMARY KEY,
+    idCliente INT,
+    accion VARCHAR(50),
+    usuario VARCHAR(50),
+    fecha DATE,
+    hora TIME
+);
+
+-- Tabla de registro para Producto
+CREATE TABLE RegistroProducto (
+    idRegistro INT AUTO_INCREMENT PRIMARY KEY,
+    idProducto INT,
+    accion VARCHAR(50),
+    usuario VARCHAR(50),
+    fecha DATE,
+    hora TIME
+);
+
+
+
