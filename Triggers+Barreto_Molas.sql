@@ -99,6 +99,7 @@ VALUES
     (1, 'Producto A', 19.99, 'Descripción del Producto A'),
     (2, 'Producto B', 29.99, 'Descripción del Producto B'),
     (3, 'Producto C', 9.99, 'Descripción del Producto C');
+    
 DELETE FROM Cliente WHERE idCliente = 1;
 
 UPDATE Producto SET Precio = 20.99 WHERE idProducto = 1;
@@ -149,13 +150,4 @@ idProducto: El ID del producto que se está eliminando.
 accion: La acción realizada, que en este caso es "ELIMINACIÓN".
 usuario: El nombre del usuario que está realizando la eliminación.
 fecha: La fecha en que se realiza la operación.
-hora: La hora a la que se realiza la operación.*/
-
-  
-
-
-
-
-
-
-
+hora: La hora a la que se realiza la operación.*/  
